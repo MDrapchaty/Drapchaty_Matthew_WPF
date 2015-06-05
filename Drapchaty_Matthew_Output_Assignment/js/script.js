@@ -1,5 +1,7 @@
 alert("hello");
 
-var favoriteNumber
-
+var favoriteNumber = 4;
+var favoriteColor = 
+console.log("This is my favorite number!");
 console.log(favoriteNumber);
+
