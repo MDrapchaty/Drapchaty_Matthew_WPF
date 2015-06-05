@@ -1,6 +1,3 @@
-var yearborn = 1955;
-var age;
-age = 25;
-var yearOfBirth =1990
-var isStudent = false;
-var FirstName = "Matt"
+var muppetNames = ["Kermit", "Miss Piggy", "Gonzo", "Rizzo"]; //0,1,2,3
+
+console.log(muppetNames[0]);
