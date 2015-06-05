@@ -1,4 +1,4 @@
-alert("Commits not working?");
+alert("Sorry for being late!");
 // Drapchaty, Matthew  SDI section 01 MDV2330-O   assignment: Output Assignment
 var favoriteNumber = 4;  // assigning a number value
 
