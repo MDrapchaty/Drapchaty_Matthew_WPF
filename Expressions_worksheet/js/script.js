@@ -31,8 +31,25 @@ console.log("Sparky got " + remainder + " slice of pizza."); //output of answer 
 //average shopping bill
 
 var spending = [144, 179, 122, 104, 217]; // setting an array of spending cost results as a variable
-var totalSpending = spending[0] + spending[1] + spending[2] + spending[3] + spending[4];
-console.log(totalSpending);
+
+// add the 5 totals together to get the grand total spending
+// add the 5 totals together and divide by the number of weeks, 5, to get the average.
+var total = spending[0] + spending[1] + spending[2] + spending[3] + spending[4]; // creating the result for total money spent on groceries.
+var average = total / 5; // creating the result for average money spent per week, over a 5 week period
+console.log("You have spent a total of $" + total + " on groceries over 5 weeks. That is an average of $" + average + " per week."); // creating the print of both results so it can be understood
 
 
+//discounts
 
+var original = 99.99; //setting number variable for orignal price
+var discount = 25 ; // setting number variable for discount percentage
+var item = "jacket"; //setting string variable for item
+var taxPercent = 12.5; //setting number variable for tax percentage
+
+// to get discount price multiply original price by the discount percentage divided by 100.
+// then we multiply tax percent number variable by orignal number and add it to orignal price number .
+
+var noTax = original * (discount/100); // creating result for discounted item with no tax.
+var taxed = noTax + original * (taxPercent/100); //created for result for discounted item with tax.
+
+console.log("Your " + item + " was originally $" + original + ", but after a " + discount + "% discount, it is now $" + noTax + " without tax, and $" + taxed + " with tax." );
