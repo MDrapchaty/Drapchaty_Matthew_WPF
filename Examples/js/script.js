@@ -1,10 +1,8 @@
 //expressions
 
-var areaCode = 407;
-var firstPart = 203;
-var secPart = 4529;
+var a = 3;
+a ++ ; //a = a + 1// a += 1
 
-var phoneNo = "(" + String(areaCode) + ")" + String(firstPart) + "-" + String(secPart);
-console.log(phoneNo);
-// (407) 203-4529
+console.log(a);
+
 
