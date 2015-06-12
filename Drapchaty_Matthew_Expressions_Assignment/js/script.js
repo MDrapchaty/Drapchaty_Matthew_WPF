@@ -1,11 +1,14 @@
-// Drapchaty, Matthe
+// Drapchaty, Matthew
 // 6.11.2015, Expressions Assignment
 
 // going to create variables representing hours of sleep
-
-var sleepLN = prompt("We are going to find out how much sleep you are getting. \nEnter the number of hours of sleep you got last night."); // creating a prompt to get variable for sleep last night.
-var sleepDBL = prompt("Enter the number of hours of sleep you got night before last."); // creating a prompt to gather variable for sleep day before last.
-var sleepT = prompt("How many hours of sleep are you planning to get tonight?"); //creating a prompt and gathering the variable for sleep tonight.
+var sleepLN; // variable for sleep last night.
+var sleepDBL; // variable for sleep day before last.
+var sleepT; // variable for sleep tonight.
+// assigning variables with prompts
+sleepLN = prompt("We are going to find out how much sleep you are getting. \nEnter the number of hours of sleep you got last night."); // creating a prompt to get variable for sleep last night.
+sleepDBL = prompt("Enter the number of hours of sleep you got night before last."); // creating a prompt to gather variable for sleep day before last.
+sleepT = prompt("How many hours of sleep are you planning to get tonight?"); //creating a prompt and gathering the variable for sleep tonight.
 
 //I am going to create equations to get total hours slept over the 3 nights, as well as an average of the sleep per night for all 3 nights and for last 2 nights.
 var sleepResults = [sleepLN, sleepDBL, sleepT]; //creating an array filled with the 3 results.
