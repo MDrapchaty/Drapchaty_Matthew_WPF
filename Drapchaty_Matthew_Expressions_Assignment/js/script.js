@@ -1,5 +1,6 @@
 // Drapchaty, Matthew
 // 6.11.2015, Expressions Assignment
+//SDI
 
 // going to create variables representing hours of sleep
 var sleepLN; // variable for sleep last night.
@@ -17,5 +18,5 @@ var sleepAvg = sleepTotal /= 3; //creating an equation to get the average amount
 var sleepASF = (Number(sleepLN) + Number(sleepDBL)) / 2; // creating equation for sleep average so far, over the last 2 nights.
 var hos = "hours of sleep"; //creating string varibale for hours of sleep to save time
 var sleepTotal2 = Number(sleepResults[0]) + Number(sleepResults[1]) + Number(sleepResults[2]); //new unchanged sleep total varibale
-console.log("If the amount of " + hos + " you get tonight is correct your total amount of " + hos + " over the last 3 days will be " + sleepTotal2 + "hrs, and your average " + hos + " over the past 3 days will be " + sleepAvg + "hrs per night. While your current average amount of " + hos + " over the past 2 days is " + sleepASF + "hrs per night."); //output with correct results using variables given
+console.log("If the amount of " + hos + " you get tonight is correct your total amount of " + hos + " over the last 3 days will be " + sleepTotal2 + "hrs, and your average " + hos + " over the past 3 days will be " + sleepAvg + "hrs per night. While your current average amount of " + hos + " over the past 2 days is " + sleepASF + "hrs per night."); //output with correct results using variables given, so it is easily read
 
