@@ -6,7 +6,7 @@
 var sleepLN; // variable for sleep last night.
 var sleepDBL; // variable for sleep day before last.
 var sleepT; // variable for sleep tonight.
-// assigning variables with prompts
+// assigning variables with prompts so th user can enter info
 sleepLN = prompt("We are going to find out how much sleep you are getting. \nEnter the number of hours of sleep you got last night."); // creating a prompt to get variable for sleep last night.
 sleepDBL = prompt("Enter the number of hours of sleep you got night before last."); // creating a prompt to gather variable for sleep day before last.
 sleepT = prompt("How many hours of sleep are you planning to get tonight?"); //creating a prompt and gathering the variable for sleep tonight.
