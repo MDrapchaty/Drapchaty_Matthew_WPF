@@ -1,6 +1,6 @@
-// Drapchaty, Matthew
-// 6.11.2015, Expressions Assignment
-//SDI
+/* Drapchaty, Matthew
+ 6.11.2015, Expressions Assignment */
+
 
 // going to create variables representing hours of sleep
 var sleepLN; // variable for sleep last night.
