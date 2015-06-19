@@ -28,7 +28,7 @@ if(weekday === "Yes"){ //if else if to determine if customer is attending park o
 
 (military === "Yes") ? console.log("You qualify for our military discounted ticket price of " + (discountTicket) + "$! Please enjoy your day at DrapLand!") : console.log("You do not qualify for our military discount."); //Ternary conditional for military or not
 
-console.log(" Please choose only up to 1 discount per ticket. If no discounts are available you must pay full ticket price of 35$. Please enjoy your day at DrapLand!"); //final output to help user read and understand
+console.log(" Please choose only up to 1 discount per ticket. If no discounts are available you must pay full ticket price of 35$. Please enjoy your day at DrapLand!"); //final output to help user read and understand that only 1 discount cen be selected 
 
 
 
