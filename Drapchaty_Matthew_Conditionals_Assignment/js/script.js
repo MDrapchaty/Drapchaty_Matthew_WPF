@@ -7,8 +7,14 @@
 // I am going to create variable's to gather information about the customers age, service in the military, or time and day of the week the customer will be attending the theme park.
 
 var age = prompt("In order to appropriately price your ticket we need to ask a few questions first. How old is the person this ticket is for?"); // creating a prompt to gather a number variable for the customer using the tickets age.
+if(age === ""){
+    age = prompt("Please enter age.");
+}
 var age = Number(age); // casting the variable age as a number
 var weekday = prompt("Will you be attending the park on a weekday? (Mon-Fri). Please respond with a \"Yes\" or \"No\"(do not use quotations)."); //string variable for yes/no to weekday
+if(weekday != "Yes || No"){
+    weekday = prompt("Please enter \"Yes\" or \"No\".");
+}
 var military = prompt("Did you serve in the U.S. military? Please respond with a \"Yes\" or \"No\"(do not use quotations)."); //string variable for yes/no to military service or not
 var discountTicket = 25; // number variable for discounted ticket price
 
