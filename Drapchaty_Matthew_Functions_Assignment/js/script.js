@@ -18,18 +18,27 @@ function randomNumGen(min, max, num) {
 
         var randomNum = Math.random() * (max - min) + min;
         randomArray[i] = Math.round(randomNum);
-        for(j=0; j < randomArray.length; j++)
-            if(randomNum == randomArray[j]) {
-                var found = true;
-                break;
-            }
-        if(!found) {
+        if(randomArray[1] == randomArray[0]) {
             randomNum = Math.random() * (max - min) + min;
             randomArray[i] = Math.round(randomNum);
+        }else if(randomArray[2] == randomArray[1] || randomArray[0]){
+            randomArray[i] = Math.round(randomNum++)
+        }else if(randomArray[3] == randomArray[0]) {
+            randomArray[i] = Math.round(randomNum++)
+        }else if(randomArray[3] == randomArray[1] || randomArray[2]){
+            randomArray[i] = Math.round(randomNum++)
+        }else if(randomArray[4] == randomArray[0] || randomArray[1]){
+            randomArray[i] = Math.round(randomNum++)
+        }else if(randomArray[4 == randomArray[2] || randomArray[3]]){
+            randomArray[i] = Math.round(randomNum++)
+        }else if(randomArray[5] == randomArray[0]){
+            randomArray[i] = Math.round(randomNum++)
+        }else if(randomArray[5] == randomArray[1] || randomArray[2]){
+            randomArray[i] = Math.round(randomNum++)
+        }else if(randomArray[5] == randomArray[3] || randomArray[4]){
+            randomArray[i] = Math.round(randomNum++);
         }
-
-        }
-
+    }
     return randomArray;
 }
 
@@ -37,7 +46,9 @@ function randomNumGen(min, max, num) {
 //main code
 
 florida = randomNumGen(1, 53, 6);
-console.log(florida);
+console.log("The results are " + florida + ".");
 
 powerBall = randomNumGen(1, 59, 5);
-console.log(powerBall);
+
+powerBallNum = randomNumGen(1, 35, 1);
+console.log("The results are " + powerBall + " ,and the powerball number is " + powerBallNum + ".");
