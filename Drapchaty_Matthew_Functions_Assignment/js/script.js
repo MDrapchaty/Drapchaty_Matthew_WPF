@@ -31,9 +31,10 @@ function randomNumGen(min, max, num) {
 //main code
 
 florida = randomNumGen(1, 53, 6);
-console.log("The results are " + florida + ".");
+
+console.log("The numbers for the Florida lottery are " + florida + "!");
 
 powerBall = randomNumGen(1, 59, 5);
-
 powerBallNum = randomNumGen(1, 35, 1);
-console.log("The results are " + powerBall + " ,and the powerball number is " + powerBallNum + ".");
+
+console.log("The numbers for the Powerball lottery are " + powerBall + " ,and the Powerball number is " + powerBallNum + "!");
