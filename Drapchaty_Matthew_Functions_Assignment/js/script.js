@@ -9,16 +9,24 @@
 
 
 //functions
-function randomNumGen(min, max, num){
-    for (var i = 0; i < num; i++)
-    var randomNum = Math.random() * (max-min) + min;
-    randomNum = Math.round(randomNum);
+function randomNumGen(min, max, num) {
 
-    return randomNum;
+    var randomArray = [];
+
+
+    for (var i = 0; i < num; i++) {
+
+        var randomNum = Math.random() * (max - min) + min;
+        randomNum = Math.round(randomNum);
+
+        randomArray[i] = randomNum;
+
+    }
+    return randomArray;
 }
 
 
 //main code
 
-randomNum = randomNumGen(1, 53, 6);
-console.log(randomNum);
+florida = randomNumGen(1, 53, 6);
+console.log(florida);
