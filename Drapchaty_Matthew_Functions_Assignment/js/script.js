@@ -17,27 +17,12 @@ function randomNumGen(min, max, num) {
     for (var i = 0; i < num; i++) {
 
         var randomNum = Math.random() * (max - min) + min;
-        randomArray[i] = Math.round(randomNum);
-        if(randomArray[1] == randomArray[0]) {
+
+        while(randomArray.indexOf(Math.round(randomNum)) != -1){
             randomNum = Math.random() * (max - min) + min;
-            randomArray[i] = Math.round(randomNum);
-        }else if(randomArray[2] == randomArray[1] || randomArray[0]){
-            randomArray[i] = Math.round(randomNum++)
-        }else if(randomArray[3] == randomArray[0]) {
-            randomArray[i] = Math.round(randomNum++)
-        }else if(randomArray[3] == randomArray[1] || randomArray[2]){
-            randomArray[i] = Math.round(randomNum++)
-        }else if(randomArray[4] == randomArray[0] || randomArray[1]){
-            randomArray[i] = Math.round(randomNum++)
-        }else if(randomArray[4 == randomArray[2] || randomArray[3]]){
-            randomArray[i] = Math.round(randomNum++)
-        }else if(randomArray[5] == randomArray[0]){
-            randomArray[i] = Math.round(randomNum++)
-        }else if(randomArray[5] == randomArray[1] || randomArray[2]){
-            randomArray[i] = Math.round(randomNum++)
-        }else if(randomArray[5] == randomArray[3] || randomArray[4]){
-            randomArray[i] = Math.round(randomNum++);
         }
+        randomArray[i] = Math.round(randomNum);
+
     }
     return randomArray;
 }
