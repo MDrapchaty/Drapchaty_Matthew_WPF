@@ -20,7 +20,6 @@ function randomNumGen(min, max, num) {
         randomNum = Math.round(randomNum);
 
         randomArray[i] = randomNum;
-
     }
     return randomArray;
 }
@@ -30,3 +29,6 @@ function randomNumGen(min, max, num) {
 
 florida = randomNumGen(1, 53, 6);
 console.log(florida);
+
+powerBall = randomNumGen(1, 59, 5);
+console.log(powerBall);
