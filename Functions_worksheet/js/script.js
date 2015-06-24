@@ -37,3 +37,6 @@ function deathByStings(weight) { //creating function, and parameter
 //main code
 var stings = deathByStings(victimWeight); // creating var to return result to, and calling function
 console.log("It takes " + stings + " bee stings to kill this animal.");
+
+
+
