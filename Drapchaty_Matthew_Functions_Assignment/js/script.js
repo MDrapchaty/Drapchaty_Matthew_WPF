@@ -17,10 +17,19 @@ function randomNumGen(min, max, num) {
     for (var i = 0; i < num; i++) {
 
         var randomNum = Math.random() * (max - min) + min;
-        randomNum = Math.round(randomNum);
+        randomArray[i] = Math.round(randomNum);
+        for(j=0; j < randomArray.length; j++)
+            if(randomNum == randomArray[j]) {
+                var found = true;
+                break;
+            }
+        if(!found) {
+            randomNum = Math.random() * (max - min) + min;
+            randomArray[i] = Math.round(randomNum);
+        }
 
-        randomArray[i] = randomNum;
-    }
+        }
+
     return randomArray;
 }
 
